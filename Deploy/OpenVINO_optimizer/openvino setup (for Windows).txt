@@ -1,0 +1,39 @@
+version==2022
+
+set SCRIPT_NAME=setupvars.bat
+
+set "INTEL_OPENVINO_DIR=C:\Program Files (x86)\Intel\openvino_2022.1.0.643\"
+
+set "python_version="
+
+set "InferenceEngine_DIR=%INTEL_OPENVINO_DIR%\runtime\cmake"
+
+set "ngraph_DIR=%INTEL_OPENVINO_DIR%\runtime\cmake"
+
+set "OpenVINO_DIR=%INTEL_OPENVINO_DIR%\runtime\cmake"
+
+set "TBB_DIR=%INTEL_OPENVINO_DIR%\runtime\3rdparty\tbb\cmake"
+
+set "HDDL_INSTALL_DIR=%INTEL_OPENVINO_DIR%\runtime\3rdparty\hddl"
+
+set "OPENVINO_LIB_PATHS=
+%INTEL_OPENVINO_DIR%\runtime\bin\intel64\Release;
+%INTEL_OPENVINO_DIR%\runtime\bin\intel64\Debug;
+%INTEL_OPENVINO_DIR%\runtime\3rdparty\tbb\bin;
+%INTEL_OPENVINO_DIR%\runtime\3rdparty\hddl\bin;"
+
+set "PATH=
+%INTEL_OPENVINO_DIR%\runtime\bin\intel64\Release;
+%INTEL_OPENVINO_DIR%\runtime\bin\intel64\Debug;
+%INTEL_OPENVINO_DIR%\runtime\3rdparty\tbb\bin;
+%INTEL_OPENVINO_DIR%\runtime\3rdparty\hddl\bin;
+%INTEL_OPENVINO_DIR%\tools\compile_tool;"
+
+set PYTHON_VERSION_MAJOR=3
+
+set MIN_REQUIRED_PYTHON_VERSION_MINOR=6
+
+set MAX_SUPPORTED_PYTHON_VERSION_MINOR=9
+
+
+set python_version=3.9
